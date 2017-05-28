@@ -38,6 +38,7 @@
             android:id="@+id/tiet_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Adik.Widiasmono@GMAIL.COM"
             android:hint="@string/username"
             android:inputType="textEmailAddress"
             android:textColor="@color/c_white" />
@@ -63,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
                 android:inputType="textPassword"
+                android:text="password"
                 android:maxLength="50"
                 android:maxLines="1"
                 android:textColor="@color/c_white" />

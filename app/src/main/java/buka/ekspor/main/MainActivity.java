@@ -55,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
         setupRecyclerView();
 
         try {
-            Glide.with(this).load(R.drawable.cover).into((ImageView) findViewById(R.id.backdrop));
+            Glide.with(this)
+                    .load(R.drawable.cover1)
+                    .centerCrop()
+                    .into((ImageView) findViewById(R.id.backdrop));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -225,59 +228,7 @@ public class MainActivity extends AppCompatActivity {
      * Adding few albums for testing
      */
     private void prepareAlbums() {
-        int[] covers = new int[]{
-                R.drawable.album1,
-                R.drawable.album2,
-                R.drawable.album3,
-                R.drawable.album4,
-                R.drawable.album5,
-                R.drawable.album6,
-                R.drawable.album7,
-                R.drawable.album8,
-                R.drawable.album9,
-                R.drawable.album10,
-                R.drawable.album11};
-
-        Ekspor a = new Ekspor("Udang Super", "8 TON",
-                new Date(), "Tujuan pengiriman ke negara Jepang. Berat udang mininal 2 Kg.", covers[0]);
-        eksporList.add(a);
-
-        a = new Ekspor("Udang Super", "8 TON",
-                new Date(), "Udang aja", covers[1]);
-        eksporList.add(a);
-
-        a = new Ekspor("Udang Super", "8 TON",
-                new Date(), "Udang aja", covers[2]);
-        eksporList.add(a);
-
-        a = new Ekspor("Udang Super", "8 TON",
-                new Date(), "Udang aja", covers[3]);
-        eksporList.add(a);
-
-        a = new Ekspor("Udang Super", "8 TON",
-                new Date(), "Udang aja", covers[4]);
-        eksporList.add(a);
-
-        a = new Ekspor("Udang Super", "8 TON",
-                new Date(), "Udang aja", covers[5]);
-        eksporList.add(a);
-
-        a = new Ekspor("Udang Super", "8 TON",
-                new Date(), "Udang aja", covers[6]);
-        eksporList.add(a);
-
-        a = new Ekspor("Udang Super", "8 TON",
-                new Date(), "Udang aja", covers[7]);
-        eksporList.add(a);
-
-        a = new Ekspor("Udang Super", "8 TON",
-                new Date(), "Udang aja", covers[8]);
-        eksporList.add(a);
-
-        a = new Ekspor("Udang Super", "8 TON",
-                new Date(), "Udang aja", covers[9]);
-        eksporList.add(a);
-
+        eksporList.addAll(UtilBuEks.getPreparedData());
         adapter.notifyDataSetChanged();
     }
 

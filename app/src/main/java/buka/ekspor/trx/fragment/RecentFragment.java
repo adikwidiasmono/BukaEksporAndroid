@@ -132,25 +132,29 @@ public class RecentFragment extends Fragment {
      * Adding few albums for testing
      */
     private void prepareAlbums() {
-        int[] covers = new int[]{
-                R.drawable.album1,
-                R.drawable.album2,
-                R.drawable.album3,
-                R.drawable.album4,
-                R.drawable.album5,
-                R.drawable.album6,
-                R.drawable.album7,
-                R.drawable.album8,
-                R.drawable.album9,
-                R.drawable.album10,
-                R.drawable.album11};
+//        int[] covers = new int[]{
+//                R.drawable.album1,
+//                R.drawable.album2,
+//                R.drawable.album3,
+//                R.drawable.album4,
+//                R.drawable.album5,
+//                R.drawable.album6,
+//                R.drawable.album7,
+//                R.drawable.album8,
+//                R.drawable.album9,
+//                R.drawable.album10,
+//                R.drawable.album11};
+//
+//        Ekspor a;
+//        for (int i = 0; i < 11; i++) {
+//            a = new Ekspor(covers[i], "Udang Super " + i, "Deskripsi udang " + i, new Date(), (i + 1) + " Ton");
+//            eksporList.add(a);
+//        }
 
-        Ekspor a;
-        for (int i = 0; i < 11; i++) {
-            a = new Ekspor(covers[i], "Udang Super " + i, "Deskripsi udang " + i, new Date(), (i + 1) + " Ton");
-            eksporList.add(a);
-        }
-
+        eksporList.add(UtilBuEks.getPreparedData().get(0));
+        eksporList.add(UtilBuEks.getPreparedData().get(1));
+        eksporList.add(UtilBuEks.getPreparedData().get(2));
+        eksporList.add(UtilBuEks.getPreparedData().get(3));
         adapter.notifyDataSetChanged();
     }
 }

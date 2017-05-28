@@ -67,7 +67,7 @@ public class EksporAdapter extends RecyclerView.Adapter<EksporAdapter.MyViewHold
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         final Ekspor ekspor = eksporList.get(position);
         holder.title.setText(ekspor.getTitle());
-        holder.detail.setText(ekspor.getWeightNeed());
+        holder.detail.setText("Kebutuhan " + ekspor.getWeightNeed());
         holder.dueDate.setText(UtilBuEks.formatDateddMMyyyy(ekspor.getDueDate()));
 
         // loading ekspor cover using Glide library

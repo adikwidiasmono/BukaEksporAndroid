@@ -43,8 +43,8 @@
                 android:paddingLeft="@dimen/ekspor_title_padding"
                 android:paddingRight="@dimen/ekspor_title_padding"
                 android:paddingTop="@dimen/ekspor_title_padding"
-                android:textColor="@color/c_gray_dark"
-                android:textSize="@dimen/ekspor_title" />
+                android:textColor="@color/c_black"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/tv_ekspor_detail"
@@ -54,7 +54,7 @@
                 android:paddingBottom="@dimen/ekspor_detail_padding_bottom"
                 android:paddingLeft="@dimen/ekspor_title_padding"
                 android:paddingRight="@dimen/ekspor_title_padding"
-                android:textSize="@dimen/ekspor_detail_text_size" />
+                android:textSize="10sp" />
 
             <ImageView
                 android:id="@+id/overflow"

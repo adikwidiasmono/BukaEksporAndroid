@@ -27,6 +27,7 @@ import buka.ekspor.main.R;
 import buka.recycleview.adapter.DoneAdapter;
 import buka.recycleview.adapter.ProceedAdapter;
 import buka.recycleview.model.Ekspor;
+import buka.utils.UtilBuEks;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -95,31 +96,34 @@ public class DoneFragment extends Fragment {
      * Adding few albums for testing
      */
     private void prepareAlbums() {
-        int[] covers = new int[]{
-                R.drawable.album1,
-                R.drawable.album2,
-                R.drawable.album3,
-                R.drawable.album4,
-                R.drawable.album5,
-                R.drawable.album6,
-                R.drawable.album7,
-                R.drawable.album8,
-                R.drawable.album9,
-                R.drawable.album10,
-                R.drawable.album11};
+//        int[] covers = new int[]{
+//                R.drawable.album1,
+//                R.drawable.album2,
+//                R.drawable.album3,
+//                R.drawable.album4,
+//                R.drawable.album5,
+//                R.drawable.album6,
+//                R.drawable.album7,
+//                R.drawable.album8,
+//                R.drawable.album9,
+//                R.drawable.album10,
+//                R.drawable.album11};
+//
+//        Ekspor a;
+//        Integer status = 0;
+//        for (int i = 0; i < 11; i++) {
+//            if (status > 3)
+//                status = 0;
+//            status++;
+//
+//            a = new Ekspor(covers[i], "Udang Super " + i, new Date(), (i + 1) + " Ton", new Date(), "0 Ton",
+//                    "Rp 500.000.000,-", true);
+//            eksporList.add(a);
+//        }
 
-        Ekspor a;
-        Integer status = 0;
-        for (int i = 0; i < 11; i++) {
-            if (status > 3)
-                status = 0;
-            status++;
-
-            a = new Ekspor(covers[i], "Udang Super " + i, new Date(), (i + 1) + " Ton", new Date(), "0 Ton",
-                    "Rp 500.000.000,-", true);
-            eksporList.add(a);
-        }
-
+        eksporList.add(UtilBuEks.getPreparedData().get(8));
+        eksporList.add(UtilBuEks.getPreparedData().get(9));
+        eksporList.add(UtilBuEks.getPreparedData().get(10));
         adapter.notifyDataSetChanged();
     }
 

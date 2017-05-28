@@ -23,6 +23,26 @@ public class Ekspor {
     private String price;
     private boolean paymentStatus;
 
+    public Ekspor(int thumbnail, String title,
+                  String weightNeed, Date dueDate,
+                  String description, Date sendDate,
+                  String weightChoose, Date proceedDate,
+                  Integer status, String rejectWeight,
+                  String price, boolean paymentStatus) {
+        this.thumbnail = thumbnail;
+        this.title = title;
+        this.weightNeed = weightNeed;
+        this.dueDate = dueDate;
+        this.description = description;
+        this.sendDate = sendDate;
+        this.weightChoose = weightChoose;
+        this.proceedDate = proceedDate;
+        this.status = status;
+        this.rejectWeight = rejectWeight;
+        this.price = price;
+        this.paymentStatus = paymentStatus;
+    }
+
     public Ekspor(String title, String weightNeed, Date dueDate, String description, int thumbnail) {
         this.thumbnail = thumbnail;
         this.title = title;
