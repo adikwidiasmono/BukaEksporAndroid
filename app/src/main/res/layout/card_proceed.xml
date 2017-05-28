@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_ekspor_radius">
+
+        <LinearLayout
+            android:id="@+id/status_side_color"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:background="#999999"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="4dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_ekspor_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TITLE Barang Ekspor"
+                android:textColor="@color/c_black"
+                android:textSize="@dimen/ekspor_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_padding_margin_small"
+                android:text="Berat 8000 Ton" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <buka.cus.view.MarkView
+                    android:id="@+id/status_mark"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    card_view:mv_mark="0"
+                    card_view:mv_max="4"
+                    card_view:mv_ringWidth="3dp"
+                    card_view:mv_startPoint="top"
+                    card_view:mv_strokeColors="@array/mv_mark_colors"
+                    card_view:mv_strokeWidth="3dp"
+                    card_view:mv_textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pg_diterima_be"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DITERIMA BE"
+                            android:textColor="@color/c_black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/"
+                            android:textColor="@color/c_black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/pg_kirim"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KIRIM"
+                            android:textColor="@color/c_black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/"
+                            android:textColor="@color/c_black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/pg_sampai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SAMPAI"
+                            android:textColor="@color/c_black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="/"
+                            android:textColor="@color/c_black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/pg_siap_bayar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SIAP BAYAR"
+                            android:textColor="@color/c_black" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_proceed_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tgl proses 00-00-000"
+                        android:textSize="@dimen/ekspor_detail_text_size" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

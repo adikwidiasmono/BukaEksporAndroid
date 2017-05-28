@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="c_white">#FFFFFF</color>
+    <color name="c_black">#000000</color>
+    <color name="c_red_dark">#B40033</color>
+    <color name="c_red">#CB0039</color>
+    <color name="c_yellow_light">#FEEBBC</color>
+    <color name="c_yellow_dark">#FDC17C</color>
+
+    <color name="colorPrimary">@color/c_red</color>
+    <color name="colorPrimaryDark">@color/c_red_dark</color>
+    <color name="colorAccent">@color/c_yellow_dark</color>
+
+    <color name="c_gray_light">#f1f5f8</color>
+    <color name="c_gray_dark">#d6d6d6</color>
+    <color name="c_gray">#eaeaea</color>
+
+    <color name="c_green">#33691E</color>
+
+    <color name="mv_1">#FF0000</color>
+    <color name="mv_2">#FF3400</color>
+    <color name="mv_3">#FF6600</color>
+    <color name="mv_4">#FF8000</color>
+    <color name="mv_5">#FF9900</color>
+    <color name="mv_6">#FFB200</color>
+    <color name="mv_7">#FFCC00</color>
+    <color name="mv_8">#FFE500</color>
+    <color name="mv_9">#FFFF00</color>
+    <color name="mv_10">#CCFF00</color>
+    <color name="mv_11">#99FF00</color>
+    <color name="mv_12">#33FF00</color>
+    <color name="mv_13">#00CC00</color>
 </resources>

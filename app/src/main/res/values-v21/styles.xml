@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="celuk_button" parent="@android:style/Widget.Material.Button">
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/c_black</item>
+    </style>
+</resources>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/user_transaction"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="@string/title_activity_transaction" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout_black_24dp"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

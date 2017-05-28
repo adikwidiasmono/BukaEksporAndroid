@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="mv_mark_colors">
+        <item>@color/mv_1</item>
+        <item>@color/mv_2</item>
+        <item>@color/mv_3</item>
+        <item>@color/mv_4</item>
+        <item>@color/mv_5</item>
+        <item>@color/mv_6</item>
+        <item>@color/mv_7</item>
+        <item>@color/mv_8</item>
+        <item>@color/mv_9</item>
+        <item>@color/mv_10</item>
+        <item>@color/mv_11</item>
+        <item>@color/mv_12</item>
+        <item>@color/mv_13</item>
+    </array>
+</resources>

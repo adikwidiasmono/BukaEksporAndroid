@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_ekspor_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/all_padding_margin_small">
+
+            <ImageView
+                android:id="@+id/iv_ekspor_thumbnail"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitXY"
+                android:src="@drawable/album2" />
+
+            <TextView
+                android:id="@+id/tv_ekspor_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/overflow"
+                android:layout_toRightOf="@id/iv_ekspor_thumbnail"
+                android:paddingLeft="@dimen/ekspor_title_padding"
+                android:paddingRight="@dimen/ekspor_title_padding"
+                android:text="TITLE Barang Ekspor [8000 Ton]"
+                android:textColor="@color/c_black"
+                android:textSize="@dimen/ekspor_title" />
+
+            <ImageView
+                android:id="@+id/overflow"
+                android:layout_width="@dimen/ic_ekspor_overflow_width"
+                android:layout_height="@dimen/ic_ekspor_overflow_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_dots" />
+
+            <TextView
+                android:id="@+id/tv_send_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_ekspor_title"
+                android:layout_toRightOf="@+id/iv_ekspor_thumbnail"
+                android:paddingLeft="@dimen/ekspor_title_padding"
+                android:text="Target kirim 00-00-000"
+                android:textColor="@color/c_black"
+                android:textSize="@dimen/ekspor_detail_text_size" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_send_date"
+                android:layout_toLeftOf="@+id/tv_kirim"
+                android:layout_toRightOf="@id/iv_ekspor_thumbnail"
+                android:paddingLeft="@dimen/ekspor_title_padding"
+                android:paddingRight="@dimen/ekspor_title_padding"
+                android:text="Jika sudah siap kirim, tekan 'KIRIM' dan ambil foto barang yang akan dikirim."
+                android:textSize="@dimen/ekspor_detail_text_size" />
+
+            <TextView
+                android:id="@+id/tv_kirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_description"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/red_border"
+                android:padding="@dimen/horizontal_padding_margin_small"
+                android:text="KIRIM"
+                android:textColor="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

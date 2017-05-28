@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MarkView">
+        <attr name="mv_strokeWidth" format="dimension" />
+        <attr name="mv_strokeColors" format="reference" />
+        <attr name="mv_ringColor" format="color" />
+        <attr name="mv_ringWidth" format="dimension" />
+        <attr name="mv_textColor" format="color" />
+        <attr name="mv_textSize" format="dimension" />
+        <attr name="mv_mark" format="integer" />
+        <attr name="mv_max" format="integer" />
+        <attr name="mv_startPoint" format="enum">
+            <enum name="top" value="270" />
+            <enum name="right" value="0" />
+            <enum name="bottom" value="90" />
+            <enum name="left" value="180" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_ekspor_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/all_padding_margin_small">
+
+            <ImageView
+                android:id="@+id/iv_ekspor_thumbnail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitXY"
+                android:src="@drawable/album2" />
+
+            <TextView
+                android:id="@+id/tv_ekspor_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/tv_detail"
+                android:layout_toRightOf="@id/iv_ekspor_thumbnail"
+                android:paddingLeft="@dimen/ekspor_title_padding"
+                android:paddingRight="@dimen/ekspor_title_padding"
+                android:text="TITLE Barang Ekspor"
+                android:textColor="@color/c_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_ekspor_thumbnail"
+                android:layout_toLeftOf="@+id/tv_detail"
+                android:layout_toRightOf="@+id/iv_ekspor_thumbnail"
+                android:paddingLeft="@dimen/ekspor_title_padding"
+                android:paddingRight="@dimen/ekspor_title_padding"
+                android:text="8000 Ton"
+                android:textColor="@color/c_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_description"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/red_border"
+                android:padding="@dimen/horizontal_padding_margin_small"
+                android:text="DETAIL"
+                android:textColor="@color/colorPrimary" />
+
+            <LinearLayout
+                android:id="@+id/ll_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_ekspor_thumbnail"
+                android:background="@color/c_gray_light"
+                android:orientation="horizontal"
+                android:padding="@dimen/all_padding_margin_small">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/all_padding_margin_small">
+
+                    <TextView
+                        android:id="@+id/tv_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MULAI 00-00-0000"
+                        android:textColor="@color/c_black" />
+
+                    <TextView
+                        android:id="@+id/tv_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SELESAI 00-00-0000"
+                        android:textColor="@color/c_black" />
+
+                    <TextView
+                        android:id="@+id/tv_accept_weigth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diterima 8 TON"
+                        android:textColor="@color/c_black" />
+
+                    <TextView
+                        android:id="@+id/tv_reject_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ditolak 0 TON"
+                        android:textColor="@color/c_red_dark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/all_padding_margin_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nominal Transaksi"
+                        android:textColor="@color/c_black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. 500.000.000"
+                        android:textColor="@color/c_black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STATUS"
+                        android:textColor="@color/c_black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_payment_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TERBAYAR"
+                        android:textColor="@color/c_green"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
